@@ -8,4 +8,8 @@ services:
       - 9911:9911
     environment:  
       - CONF_CODE=123456
+      - MINDBOX_URL=http://api.vk.com/1
+      - MINDBOX_KEY=123
+      - MINDBOX_BRAND=meow
+      - MINDBOX_POINT_OF_CONTACT=kitten-vk
 
