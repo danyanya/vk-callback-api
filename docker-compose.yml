@@ -1,0 +1,11 @@
+version: '2'
+services:
+  vk-callbak-api-server:
+    image: danyanya/vk-callbak-api-server
+    build: .
+    command: /usr/bin/vk-callback-api 
+    ports:
+      - 9911:9911
+    environment:  
+      - CONF_CODE=123456
+
