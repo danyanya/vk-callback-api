@@ -1,4 +1,4 @@
-FROM scratch
+FROM centurylink/ca-certs
 
 ADD ./bin/vk-callback-api /usr/bin/vk-callback-api
 

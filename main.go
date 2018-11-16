@@ -51,14 +51,15 @@ type Response struct {
 }
 
 type MindBoxSubscription struct {
-	Brand          string `xml:"brand"`
-	PointOfContact string `xml:"pointOfContact"`
+	XMLName        xml.Name `xml:"subscription"`
+	Brand          string   `xml:"brand"`
+	PointOfContact string   `xml:"pointOfContact"`
 }
 
 type MindBoxCustomer struct {
 	MobilePhone   string                `xml:"mobilePhone"`
 	Email         string                `xml:"email"`
-	Subscriptions []MindBoxSubscription `xml:"subscriptions"`
+	Subscriptions []MindBoxSubscription `xml:"subscriptions>subscription"`
 }
 
 type MindBoxOperation struct {
